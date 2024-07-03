@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <title>YouTube Clone</title>
+</head>
+
+<body class="font-roboto pt-36 pl-[262px]">
+
+    <!-- Header -->
+    <header class="">
+
+        <!-- Navbar -->
+        <nav class="flex flex-row justify-between h-14 fixed top-0 left-0 right-0 bg-white">
+
+            <!-- Left Section -->
+            <div class="flex flex-row items-center justify-between">
+
+                <div
+                    class="flex justify-center items-center shrink-0 hover:bg-ash hover:cursor-pointer w-10 h-10 rounded-full mx-4">
+                    <img class="h-6" src="icons/hamburger.svg" alt="">
+                </div>
+
+                <img class=" hover:cursor-pointer h-5" src="icons/youtube.svg" alt="">
+
+            </div>
+
+            <!-- Middle Section -->
+            <div class="flex-1 flex justify-center items-center mx-8">
+
+                <input class="flex-1 pl-5 rounded-l-3xl h-10 w-0 max-w-[548px] border-solid border border-gray"
+                    type="text" placeholder="Search">
+
+                <button
+                    class="bg-lightstone border-solid border-r border-t border-b border-gray w-16 h-10 flex items-center justify-center rounded-r-3xl mr-4">
+                    <img src="icons/search.svg" alt="" class="w-6">
+                </button>
+
+                <div class="flex justify-center bg-stone hover:cursor-pointer w-10 h-10 rounded-full">
+                    <img class="w-6" src="icons/voice.svg" alt="">
+                </div>
+
+            </div>
+
+            <!-- Right Section -->
+            <div class="flex flex-row items-center justify-between w-36 mr-8">
+
+                <div class="flex justify-center hover:bg-ash hover:cursor-pointer w-10 h-10 rounded-full">
+                    <img class="w-6" src="icons/upload.svg" alt="">
+                </div>
+
+                <div class="flex justify-center hover:bg-ash hover:cursor-pointer w-10 h-10 rounded-full">
+                    <img class="w-6" src="icons/notifications.svg" alt="">
+                </div>
+
+                <div class="hover:cursor-pointer">
+                    <img class="w-8 rounded-full" src="https://picsum.photos/300/300?random=11" alt="">
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- Tags -->
+        <div class="flex flex-row h-14 items-center fixed top-14 left-60 right-0 bg-white pl-[22px]">
+            <button class="px-3 py-1 rounded-md bg-black font-medium text-sm text-white mr-3">All</button>
+            <button
+                class="px-3 py-1 rounded-md bg-stone font-medium text-sm mr-3 hover:bg-ash hover:duration-300">JavaScript</button>
+            <button class="px-3 py-1 rounded-md bg-stone font-medium text-sm mr-3 hover:bg-ash hover:duration-300">Web
+                Development</button>
+            <button
+                class="px-3 py-1 rounded-md bg-stone font-medium text-sm mr-3 hover:bg-ash hover:duration-300">Computer
+                Programming</button>
+            <button class="px-3 py-1 rounded-md bg-stone font-medium text-sm mr-3 hover:bg-ash hover:duration-300">User
+                Interface</button>
+            <button
+                class="px-3 py-1 rounded-md bg-stone font-medium text-sm mr-3 hover:bg-ash hover:duration-300">Gaming</button>
+            <button class="px-3 py-1 rounded-md bg-stone font-medium text-sm mr-3 hover:bg-ash hover:duration-300">3D
+                Computer Graphics</button>
+            <button
+                class="px-3 py-1 rounded-md bg-stone font-medium text-sm mr-3 hover:bg-ash hover:duration-300">Adobe</button>
+            <button
+                class="px-3 py-1 rounded-md bg-stone font-medium text-sm mr-3 hover:bg-ash hover:duration-300">Intelligence</button>
+            <button
+                class="px-3 py-1 rounded-md bg-stone font-medium text-sm mr-3 hover:bg-ash hover:duration-300">Thoughts</button>
+            <button
+                class="px-3 py-1 rounded-md bg-stone font-medium text-sm mr-3 hover:bg-ash hover:duration-300">Superhero
+                Movies</button>
+            <button
+                class="px-3 py-1 rounded-md bg-stone font-medium text-sm mr-3 hover:bg-ash hover:duration-300">Digital
+                Marketing</button>
+            <button
+                class="px-3 py-1 rounded-md bg-stone font-medium text-sm mr-3 hover:bg-ash hover:duration-300">Live</button>
+            <button
+                class="px-3 py-1 rounded-md bg-stone font-medium text-sm mr-3 hover:bg-ash hover:duration-300">Gadgets</button>
+        </div>
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Sidebar -->
+    <div class="w-60 bg-white flex flex-col fixed top-[68px] bottom-0 left-0">
+
+        <div class="flex items-center bg-stone hover:bg-ash cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <img class="h-6 ml-3 mr-6" src="icons/home.svg" alt="">
+            <span class="font-medium text-sm">Home</span>
+        </div>
+
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <img class="h-6 ml-3 mr-6" src="icons/shorts-outlined.svg" alt="">
+            <span class="font-normal text-sm">Shorts</span>
+        </div>
+
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <img class="h-6 ml-3 mr-6" src="icons/subscriptions.svg" alt="">
+            <span class="font-normal text-sm">Subscriptions</span>
+        </div>
+
+        <hr class=" border-solid border-t border-ash w-[216px] ml-3 my-3">
+
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <span class="font-medium ml-3">You</span>
+            <img class="ml-2" src="icons/right-arrow.svg" alt="">
+        </div>
+
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <img class="h-6 ml-3 mr-6" src="icons/your-channel.svg" alt="">
+            <span class="font-normal text-sm">Your channel</span>
+        </div>
+
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <img class="h-6 ml-3 mr-6" src="icons/history.svg" alt="">
+            <span class="font-normal text-sm">History</span>
+        </div>
+
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <img class="h-6 ml-3 mr-6" src="icons/playlist.svg" alt="">
+            <span class="font-normal text-sm">Playlists</span>
+        </div>
+
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <img class="h-6 ml-3 mr-6" src="icons/your-videos.svg" alt="">
+            <span class="font-normal text-sm">Your videos</span>
+        </div>
+
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <img class="h-6 ml-3 mr-6" src="icons/watch-later.svg" alt="">
+            <span class="font-normal text-sm">Watch later</span>
+        </div>
+
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <img class="h-6 ml-3 mr-6" src="icons/liked-videos.svg" alt="">
+            <span class="font-normal text-sm">Liked videos</span>
+        </div>
+
+        <hr class=" border-solid border-t border-ash w-[216px] ml-3 my-3">
+
+        <span class="font-medium ml-6 mt-[5px]">Subscriptions</span>
+
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl mt-[3px]">
+            <img class="ml-3 mr-6 w-6 rounded-full" src="https://picsum.photos/300/300?random=12" alt="">
+            <span class="font-normal text-sm">Lorem ipsum</span>
+        </div>
+        
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <img class="ml-3 mr-6 w-6 rounded-full" src="https://picsum.photos/300/300?random=13" alt="">
+            <span class="font-normal text-sm">Lorem ipsum</span>
+        </div>
+        
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <img class="ml-3 mr-6 w-6 rounded-full" src="https://picsum.photos/300/300?random=14" alt="">
+            <span class="font-normal text-sm">Lorem ipsum</span>
+        </div>
+        
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <img class="ml-3 mr-6 w-6 rounded-full" src="https://picsum.photos/300/300?random=15" alt="">
+            <span class="font-normal text-sm">Lorem ipsum</span>
+        </div>
+        
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <img class="ml-3 mr-6 w-6 rounded-full" src="https://picsum.photos/300/300?random=16" alt="">
+            <span class="font-normal text-sm">Lorem ipsum</span>
+        </div>
+        
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <img class="ml-3 mr-6 w-6 rounded-full" src="https://picsum.photos/300/300?random=17" alt="">
+            <span class="font-normal text-sm">Lorem ipsum</span>
+        </div>
+        
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <img class="ml-3 mr-6 w-6 rounded-full" src="https://picsum.photos/300/300?random=18" alt="">
+            <span class="font-normal text-sm">Lorem ipsum</span>
+        </div>
+
+        <div class="flex items-center hover:bg-stone cursor-pointer h-10 ml-3 mr-6 rounded-xl">
+            <img class="h-6 ml-3 mr-6" src="icons/down-arrow.svg" alt="">
+            <span class="font-normal text-sm">Show more</span>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main>
+
+        <!-- Video Grid -->
+        <div class="grid grid-cols-5 gap-4">
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=1" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer" src="https://picsum.photos/300/300?random=1">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=2" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer" src="https://picsum.photos/300/300?random=2">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=3" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer" src="https://picsum.photos/300/300?random=3">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=4" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer" src="https://picsum.photos/300/300?random=4">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=5" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer" src="https://picsum.photos/300/300?random=5">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=6" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer" src="https://picsum.photos/300/300?random=6">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=7" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer" src="https://picsum.photos/300/300?random=7">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=8" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer" src="https://picsum.photos/300/300?random=8">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=9" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer" src="https://picsum.photos/300/300?random=9">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=10" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer"
+                            src="https://picsum.photos/300/300?random=10">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Shorts -->
+        <div class="my-7">
+
+            <!-- Logo $ Title -->
+            <div class="flex flex-row mb-7 pl-2">
+                <img class="w-4 mr-3" src="icons/shorts.svg" alt="">
+                <span class="font-semibold text-xl">
+                    Shorts
+                </span>
+            </div>
+
+            <!-- Shorts Grid -->
+            <div class="grid grid-cols-7 gap-5">
+
+                <!-- Shorts Card -->
+                <div class="flex flex-col">
+
+                    <!-- Shorts Thumbnail -->
+                    <div>
+                        <img class="rounded-xl" src="https://picsum.photos/405/720?random=1" alt="">
+                    </div>
+
+                    <!-- Shorts Description -->
+                    <div class="flex flex-row mt-3">
+
+                        <!-- Shorts Video Info -->
+                        <div class="flex-1">
+                            <!-- Shorts Video Title -->
+                            <div class="font-medium text-base">Lorem ipsum dolor sit amet.</div>
+                            <!-- Shorts Video Stats -->
+                            <div class="text-sm text-silver">113K views</div>
+                        </div>
+
+                        <!-- Dots -->
+                        <div>
+                            <img class="w-5 pt-0.5" src="icons/dots.svg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Shorts Card -->
+                <div class="flex flex-col">
+
+                    <!-- Shorts Thumbnail -->
+                    <div>
+                        <img class="rounded-xl" src="https://picsum.photos/405/720?random=2" alt="">
+                    </div>
+
+                    <!-- Shorts Description -->
+                    <div class="flex flex-row mt-3">
+
+                        <!-- Shorts Video Info -->
+                        <div class="flex-1">
+                            <!-- Shorts Video Title -->
+                            <div class="font-medium text-base">Lorem ipsum dolor sit amet.</div>
+                            <!-- Shorts Video Stats -->
+                            <div class="text-sm text-silver">113K views</div>
+                        </div>
+
+                        <!-- Dots -->
+                        <div>
+                            <img class="w-5 pt-0.5" src="icons/dots.svg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Shorts Card -->
+                <div class="flex flex-col">
+
+                    <!-- Shorts Thumbnail -->
+                    <div>
+                        <img class="rounded-xl" src="https://picsum.photos/405/720?random=3" alt="">
+                    </div>
+
+                    <!-- Shorts Description -->
+                    <div class="flex flex-row mt-3">
+
+                        <!-- Shorts Video Info -->
+                        <div class="flex-1">
+                            <!-- Shorts Video Title -->
+                            <div class="font-medium text-base">Lorem ipsum dolor sit amet.</div>
+                            <!-- Shorts Video Stats -->
+                            <div class="text-sm text-silver">113K views</div>
+                        </div>
+
+                        <!-- Dots -->
+                        <div>
+                            <img class="w-5 pt-0.5" src="icons/dots.svg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Shorts Card -->
+                <div class="flex flex-col">
+
+                    <!-- Shorts Thumbnail -->
+                    <div>
+                        <img class="rounded-xl" src="https://picsum.photos/405/720?random=4" alt="">
+                    </div>
+
+                    <!-- Shorts Description -->
+                    <div class="flex flex-row mt-3">
+
+                        <!-- Shorts Video Info -->
+                        <div class="flex-1">
+                            <!-- Shorts Video Title -->
+                            <div class="font-medium text-base">Lorem ipsum dolor sit amet.</div>
+                            <!-- Shorts Video Stats -->
+                            <div class="text-sm text-silver">113K views</div>
+                        </div>
+
+                        <!-- Dots -->
+                        <div>
+                            <img class="w-5 pt-0.5" src="icons/dots.svg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Shorts Card -->
+                <div class="flex flex-col">
+
+                    <!-- Shorts Thumbnail -->
+                    <div>
+                        <img class="rounded-xl" src="https://picsum.photos/405/720?random=5" alt="">
+                    </div>
+
+                    <!-- Shorts Description -->
+                    <div class="flex flex-row mt-3">
+
+                        <!-- Shorts Video Info -->
+                        <div class="flex-1">
+                            <!-- Shorts Video Title -->
+                            <div class="font-medium text-base">Lorem ipsum dolor sit amet.</div>
+                            <!-- Shorts Video Stats -->
+                            <div class="text-sm text-silver">113K views</div>
+                        </div>
+
+                        <!-- Dots -->
+                        <div>
+                            <img class="w-5 pt-0.5" src="icons/dots.svg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Shorts Card -->
+                <div class="flex flex-col">
+
+                    <!-- Shorts Thumbnail -->
+                    <div>
+                        <img class="rounded-xl" src="https://picsum.photos/405/720?random=6" alt="">
+                    </div>
+
+                    <!-- Shorts Description -->
+                    <div class="flex flex-row mt-3">
+
+                        <!-- Shorts Video Info -->
+                        <div class="flex-1">
+                            <!-- Shorts Video Title -->
+                            <div class="font-medium text-base">Lorem ipsum dolor sit amet.</div>
+                            <!-- Shorts Video Stats -->
+                            <div class="text-sm text-silver">113K views</div>
+                        </div>
+
+                        <!-- Dots -->
+                        <div>
+                            <img class="w-5 pt-0.5" src="icons/dots.svg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Shorts Card -->
+                <div class="flex flex-col">
+
+                    <!-- Shorts Thumbnail -->
+                    <div>
+                        <img class="rounded-xl" src="https://picsum.photos/405/720?random=7" alt="">
+                    </div>
+
+                    <!-- Shorts Description -->
+                    <div class="flex flex-row mt-3">
+
+                        <!-- Shorts Video Info -->
+                        <div class="flex-1">
+                            <!-- Shorts Video Title -->
+                            <div class="font-medium text-base">Lorem ipsum dolor sit amet.</div>
+                            <!-- Shorts Video Stats -->
+                            <div class="text-sm text-silver">113K views</div>
+                        </div>
+
+                        <!-- Dots -->
+                        <div>
+                            <img class="w-5 pt-0.5" src="icons/dots.svg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Video Grid -->
+        <div class="grid grid-cols-5 gap-4">
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=11" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer"
+                            src="https://picsum.photos/300/300?random=11">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=12" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer"
+                            src="https://picsum.photos/300/300?random=12">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=13" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer"
+                            src="https://picsum.photos/300/300?random=13">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=14" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer"
+                            src="https://picsum.photos/300/300?random=14">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=15" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer"
+                            src="https://picsum.photos/300/300?random=15">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=16" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer"
+                            src="https://picsum.photos/300/300?random=16">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=17" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer"
+                            src="https://picsum.photos/300/300?random=17">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=18" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer"
+                            src="https://picsum.photos/300/300?random=18">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=19" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer"
+                            src="https://picsum.photos/300/300?random=19">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Video Card -->
+            <div class="flex flex-col ">
+
+                <!-- Thumbnail -->
+                <div class="hover:cursor-pointer">
+                    <img class="rounded-xl" src="https://picsum.photos/720/404?random=20" alt="">
+                </div>
+
+                <!-- Description -->
+                <div class="flex flex-row mt-3 hover:cursor-pointer">
+
+                    <!-- Channel Picture -->
+                    <div class="mr-4">
+                        <img class="rounded-full w-9 hover:cursor-pointer"
+                            src="https://picsum.photos/300/300?random=20">
+                    </div>
+
+                    <!-- Video Info -->
+                    <div class="flex-1">
+
+                        <!-- Video Title -->
+                        <div class="font-medium text-lg mb-2">Lorem ipsum dolor sit amet.</div>
+
+                        <!-- Channel Name -->
+                        <div class="text-base text-silver">Kevin Powell</div>
+
+                        <!-- Video Stats -->
+                        <div class="text-base text-silver">113K views &#8226 3 months ago</div>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="">
+                        <img class="w-5" src="icons/dots.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
